@@ -6,4 +6,4 @@ Then I check if they are prime or not. This way I found out that there are 7 pri
 
 Of course it's useless, but so interesting!
 
-It's one of my first Ruby code so it does not work as fast as I wish. Thus I made also a C++ version: it's faster, but not so beautiful.
+It's one of my first Ruby code so it does not work as fast as I wish. Thus I made also a C++ version: it's faster (also based on a bit different algo), but not so beautiful.
