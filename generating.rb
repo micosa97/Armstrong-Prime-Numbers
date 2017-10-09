@@ -14,7 +14,7 @@ class Generating
     return q
   end
 
-  def generuj(d, l, u, s, w, pot)  #d-length l-ilość lczb do wygen, u - max użyta liczba (gen multipodzbiory rozsacą) s - suma w - wartość liczby, którą sworzyliśmy pot - tablica
+  def generate(d, l, u, s, w, pot)  #d-length l-ilość lczb do wygen, u - max użyta liczba (gen multipodzbiory rozsacą) s - suma w - wartość liczby, którą sworzyliśmy pot - tablica
     if (s<=pot[10][d])
       if (l==0)
         if (s>=pot[10][d-1])
@@ -27,7 +27,7 @@ class Generating
         end
       else
         for i in (u..9)
-          generuj(d, l-1, i, s+pot[i][d], (i+10*w), pot)
+          generate(d, l-1, i, s+pot[i][d], (i+10*w), pot)
         end
       end
     end
